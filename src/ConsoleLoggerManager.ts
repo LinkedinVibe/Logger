@@ -1,7 +1,7 @@
 import ConsoleLogger from "./ConsoleLogger";
 import { ConsoleLoggerConfiguration } from "./ConsoleLogger";
 import { DefaultLoggerName } from "./Constants";
-import LoggerManager from "./LoggerManager";
+import { LoggerManager } from "./LoggerManager";
 
 export default class ConsoleLoggerManager implements LoggerManager {
     private _name: string;

@@ -1,5 +1,6 @@
-import Logger from "./Logger";
-
-export default interface LoggerManager {
+import { Logger } from "./Logger";
+interface LoggerManager {
     Get(name: string): Logger;
 }
+
+export type { LoggerManager }

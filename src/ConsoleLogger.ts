@@ -1,4 +1,4 @@
-import Logger from "./Logger";
+import { Logger } from "./Logger";
 import { DefaultLoggerName } from "./Constants";
 
 class LoggerConfigurationInteral {
