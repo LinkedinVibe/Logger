@@ -1,28 +1,31 @@
 {
-  "name": "zlogger",
-  "version": "1.0.0",
+  "name": "@zzck.dev/logger",
+  "version": "1.0.1",
   "description": "TS flexible logger",
-  "main": "build/index.js",
-  "types": "build/index.d.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "typescript": "^4.3.5"
+  },
   "scripts": {
-    "build": "rimraf ./build && tsc"
+    "build": "rimraf ./lib && tsc"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LinkedinVibe/Logger.git"
   },
   "keywords": [
-    "log",
-    "logger"
+    "logger",
+    "logs"
   ],
   "author": "Zakhar Bozhok",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/LinkedinVibe/Logger/issues"
   },
-  "homepage": "https://github.com/LinkedinVibe/Logger#readme",
-  "devDependencies": {
-    "rimraf": "^3.0.2",
-    "typescript": "^4.3.5"
-  }
+  "homepage": "https://github.com/LinkedinVibe/Logger#readme"
 }
