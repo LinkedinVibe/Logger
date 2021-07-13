@@ -83,7 +83,7 @@ export default class ConsoleLogger implements Logger {
     }
     private _config: LoggerConfigurationInteral;
     public get config(): ConsoleLoggerConfiguration {
-        return LoggerConfigurationInteral_To_ConsoleLoggerConfiguration(this._config)
+        return this._config
     }
 
     public set config(v: ConsoleLoggerConfiguration) {
@@ -101,7 +101,7 @@ export default class ConsoleLogger implements Logger {
     public info(...args: any[]): void {
         if (!this._config.enabled || !this._config.infoEnabled) return
         console.info(
-            this._COLOURS.FgWhite,
+            this._COLOURS.Bright,
             this.date,
             this._config.delim,
             this._logTypes.inf,
