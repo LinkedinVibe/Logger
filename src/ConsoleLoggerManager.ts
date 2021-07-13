@@ -30,7 +30,7 @@ export default class ConsoleLoggerManager implements LoggerManager {
         if (name in this._loggers) {
             return this._loggers[name];
         }
-        this._self.warn(`Can't find logger "${name}", creating new with "${DefaultLoggerName}" configs`)
+        this._self.debug(`Can't find logger "${name}", creating new with "${DefaultLoggerName}" configs`)
         this.Set({ name: name })
         return this.Get(name)
     }
